@@ -1,14 +1,14 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
-import { useSession } from "next-auth/react";
+import { useRouter, useSearchParams } from "next/navigation";
+
 import Profile from "@components/Profile";
 
-const MyProfile = () => {
-  const { data: session } = useSession();
+const MyProfile = ({ params }) => {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [posts, setPosts] = useState([]);
-
+  console.log(searchParams);
   const handleEdit = (post) => {
     router.push(`/update-prompt?id=${post._id}`);
   };
@@ -34,19 +34,19 @@ const MyProfile = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const response = await fetch(`api/users/${session?.user.id}/posts`);
+      const response = await fetch(`/api/users/${params?.id}/posts`);
       const data = await response.json();
-
+      console.log(response);
       setPosts(data);
     };
 
-    if (session?.user.id) fetchPosts();
+    fetchPosts();
   }, []);
 
   return (
     <Profile
-      name="Your"
-      desc="This is your personalized profile page. Manage, edit and delete prompts that you have created."
+      name={searchParams.get("name")}
+      desc="View and share prompts created by this user."
       data={posts}
       handleDelete={handleDelete}
       handleEdit={handleEdit}
