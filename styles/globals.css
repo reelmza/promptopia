@@ -86,7 +86,7 @@
 }
 
 .head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+  @apply mt-5 text-3xl md:text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
 }
 
 .orange_gradient {
@@ -150,7 +150,7 @@
 
 /* PromptCard Component */
 .prompt_card {
-  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full h-fit;
+  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/50 p-6 pb-4 md:w-[360px] w-full h-fit;
 }
 
 .flex-center {
