@@ -63,9 +63,16 @@ const Nav = () => {
                   type="button"
                   key={provider.name}
                   onClick={() => signIn(provider.id)}
-                  className="cursor-pointer black_btn"
+                  className="black_btn"
                 >
-                  Sign In
+                  <Image
+                    src="/assets/icons/google.svg"
+                    height={14}
+                    width={14}
+                  />
+                  <span className="ml-2 pl-2 border-l border-gray-300">
+                    Sign In
+                  </span>
                 </button>
               ))}
           </>
@@ -127,7 +134,14 @@ const Nav = () => {
                     onClick={() => signIn(provider.id)}
                     className="black_btn"
                   >
-                    Sign In
+                    <Image
+                      src="/assets/icons/google.svg"
+                      height={14}
+                      width={14}
+                    />
+                    <span className="ml-2 pl-2 border-l border-gray-300">
+                      Sign In
+                    </span>
                   </button>
                 );
               })}
