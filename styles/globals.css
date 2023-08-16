@@ -11,19 +11,10 @@
   user-select: none;
 }
 
-html{
-  height: 100%;
-}
-
-body {
-  height: 100%;
-}
-
 .main {
   width: 100vw;
-  max-height: 100vh;
-  overflow-y: scroll;
-  
+  min-height: 100vh;
+
   position: fixed;
   display: flex;
   justify-content: center;
@@ -87,7 +78,7 @@ body {
 /* Tailwind Styles */
 
 .app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto max-h-[100%] overflow-y-scroll sm:px-16 px-6;
+  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
 .black_btn {
@@ -99,7 +90,7 @@ body {
 }
 
 .head_text {
-  @apply mt-5 text-3xl md:text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+  @apply mt-5 text-4xl md:text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
 }
 
 .orange_gradient {
