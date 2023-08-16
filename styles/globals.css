@@ -119,7 +119,7 @@
 }
 
 .copy_btn {
-  @apply w-9 h-9 rounded-full bg-gray-100 text-gray-900 flex justify-center items-center cursor-pointer;
+  @apply w-9 h-9 rounded-full bg-gray-100 text-gray-800 flex justify-center items-center cursor-pointer;
 }
 
 .glassmorphism {
