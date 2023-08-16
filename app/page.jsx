@@ -9,7 +9,7 @@ const Home = () => {
         <span className="orange_gradient text-center">AI Powered Prompts</span>
       </h1>
       <p className="desc text-center">
-        Promptopia is an open-source AI Prompting tool for modern world to
+        Promptopia is an open-source AI Prompting tool for the modern world to
         dicover.
       </p>
 

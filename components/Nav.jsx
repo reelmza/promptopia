@@ -65,14 +65,7 @@ const Nav = () => {
                   onClick={() => signIn(provider.id)}
                   className="black_btn"
                 >
-                  <Image
-                    src="/assets/icons/google.svg"
-                    height={14}
-                    width={14}
-                  />
-                  <span className="ml-2 pl-2 border-l border-gray-300">
-                    Sign In
-                  </span>
+                  Sign In
                 </button>
               ))}
           </>
@@ -134,14 +127,7 @@ const Nav = () => {
                     onClick={() => signIn(provider.id)}
                     className="black_btn"
                   >
-                    <Image
-                      src="/assets/icons/google.svg"
-                      height={14}
-                      width={14}
-                    />
-                    <span className="ml-2 pl-2 border-l border-gray-300">
-                      Sign In
-                    </span>
+                    Sign In
                   </button>
                 );
               })}

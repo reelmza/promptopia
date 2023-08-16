@@ -87,7 +87,7 @@
 }
 
 .black_btn {
-  @apply rounded-full bg-black py-2 px-5 text-white transition-all hover:bg-orange-600 text-center text-sm leading-tight font-inter flex items-center justify-center;
+  @apply rounded-full bg-black py-2 px-5 text-white transition-all hover:bg-orange-600 text-center text-sm leading-tight font-inter font-semibold flex items-center justify-center;
 }
 
 .outline_btn {
@@ -146,8 +146,9 @@
 
 /* Nav Component */
 .logo_text {
-  @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
+  @apply font-satoshi font-semibold text-lg text-black tracking-tight;
 }
+/* max-sm:hidden */
 
 .dropdown {
   @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
