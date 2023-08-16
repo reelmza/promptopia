@@ -10,9 +10,20 @@
 * {
   user-select: none;
 }
+
+html{
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
 .main {
-  width: 100vw;
-  min-height: 100vh;
+  /* width: 100vw;
+  min-height: 100vh; */
+  width: 100%;
+  min-height: 100%;
   position: fixed;
   display: flex;
   justify-content: center;
