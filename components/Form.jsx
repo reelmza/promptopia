@@ -33,10 +33,11 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
 
         {/* Tags */}
         <label>
-          <span className="font-satoshi font-semibold text-base text-gray-700">
-            Tags{" "}
-            <span className="font-normal">
-              (#product, #webdevelopment, #idea)
+          <span className="font-satoshi font-semibold text-base text-gray-700 leading-none">
+            Tags <br />
+            <span className="font-normal text-xs">
+              (e.g products)
+              <span className=""> use only one tag</span>
             </span>
           </span>
 
