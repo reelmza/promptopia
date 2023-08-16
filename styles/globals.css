@@ -75,6 +75,11 @@
   }
 }
 
+/* Personal styles */
+.highlight_none {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 /* Tailwind Styles */
 
 .app {
@@ -106,7 +111,7 @@
 }
 
 .desc {
-  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
+  @apply mt-5 text-base md:text-lg text-gray-600 sm:text-xl max-w-2xl;
 }
 
 .search_input {
@@ -114,7 +119,7 @@
 }
 
 .copy_btn {
-  @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
+  @apply w-9 h-9 rounded-full bg-gray-100 flex justify-center items-center cursor-pointer;
 }
 
 .glassmorphism {
